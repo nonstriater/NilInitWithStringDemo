@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *phone = nil;
+    
+    NSString *string = [NSString stringWithString:phone];
+    NSLog(@"phone = %@",string);
+    
+//    NSMutableString *ms = [[NSMutableString alloc] initWithString:phone];
+//    NSLog(@"phone=%@",ms);
+    
+    //it will crash  because of " -[NSPlaceholderString initWithString:]: nil argument "
+    
 }
 
 - (void)didReceiveMemoryWarning {
